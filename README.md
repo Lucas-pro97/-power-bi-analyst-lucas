@@ -102,20 +102,20 @@ A análise conjunta de **Sales, Units Sold e Profit** permite observar a diferen
 ```text
 -power-bi-analyst-lucas/
 │
-├── 📂 dashboard/
+├── dashboard/
 │   └── Financial_Report_DIO.pbix
 │
-├── 📂 presentation/
+├── dataset/
+│   └── Financial Sample.xlsx
+│
+├── presentation/
 │   └── Analista-Power-BI-Desafio-Mapas.pptx
 │
-├── 📂 screenshots/
+├── screenshots/
 │   ├── capa.png
 │   ├── pagina-1.png
 │   ├── pagina-2.png
 │   └── pagina-3.png
-│
-├── 📂 dataset/
-│   └── Fonte-do-dataset.md
 │
 └── README.md
 ```
