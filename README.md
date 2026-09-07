@@ -1,81 +1,221 @@
-# 📊 Desafio Power BI — Análise Financeira e Territorial (DIO)
+# 📊 Dashboard Financeiro — Power BI Analyst
 
-![Power BI](https://img.shields.io/badge/Power_BI-F2C811?style=for-the-badge&logo=powerbi&logoColor=black)
-![GitHub](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)
-![Data Analysis](https://img.shields.io/badge/Data_Analysis-20629B?style=for-the-badge)
+![Power BI](https://img.shields.io/badge/Power%20BI-Data%20Visualization-yellow)
+![DAX](https://img.shields.io/badge/DAX-Data%20Analysis-blue)
+![Business Intelligence](https://img.shields.io/badge/Business%20Intelligence-BI-green)
+![Status](https://img.shields.io/badge/Status-Concluído-success)
 
-Projeto prático desenvolvido para o bootcamp de **Power BI Analyst** da **[Digital Innovation One (DIO)](https://www.dio.me/)**. 
+## 📌 Sobre o Projeto
 
-O objetivo deste projeto é construir um relatório completo e interativo no Power BI com base no *dataset* **Financial Sample**, explorando métricas de vendas, unidades vendidas, produtos e distribuição de lucratividade por segmentos e localização geográfica.
+Este projeto foi desenvolvido como parte do **Bootcamp Power BI Analyst da DIO**, com o objetivo de colocar em prática conceitos de **Business Intelligence, análise de dados e visualização de informações utilizando Microsoft Power BI**.
 
----
+O desafio consiste na reprodução de páginas apresentadas durante o curso e na criação de uma terceira página autoral, explorando diferentes tipos de visuais e recursos de interação.
 
-## 📌 Visão Geral do Relatório
-
-O relatório é composto por **3 páginas analíticas**, combinando a replicação dos conceitos aprendidos e a criação autônoma de visuais:
-
-### 📄 Página 1: Relatório de Vendas por Produtos
-Focus na distribuição de produtos, preços de venda e volume financeiro por ano e segmento.
-* **Filtro Temporal (Slicer):** Filtro hierárquico por Ano (`2013`, `2014`) e Trimestres.
-* **Soma de Sales por Product (Gráfico de Rosca):** Destaque para os produtos mais vendidos (ex: *Paseo* representando 29,35% das vendas com R$ 27,1 Mi).
-* **Contagem de Sale Price por Product (Gráfico de Área):** Acompanhamento do volume de registros de preços por linha de produto.
-* **Soma de Sales por Product, Year e Segment (Gráfico de Colunas Agrupadas):** Análise comparativa das vendas entre os segmentos (*Government*, *Small Business*, *Enterprise*, etc.) ao longo dos anos.
+Além de atender aos requisitos propostos no desafio, o projeto foi estruturado pensando também em boas práticas de apresentação e organização de um relatório de Business Intelligence.
 
 ---
 
-### 📄 Página 2: Métricas Operacionais e Distribuição Geográfica
-Visualização focada em KPIs globais, sazonalidade mensal de lucros e performance por país.
-* **Cartões de KPI:**
-  * **Soma de Sales:** `24,35 Mi`
-  * **Máximo de Units Sold:** `4,24 Mil`
-* **Soma de Profit e Primeiro Segment por Month Name (Gráfico de Colunas):** Análise do comportamento do lucro mês a mês.
-* **Distribuição por País (Gráfico de Pizza):** Proporção das operações entre os países (*United States*, *Canada*, *France*, *Germany*, *Mexico*).
-* **Soma de Sales por Country (Gráfico de Barras/Colunas):** Comparativo direto de faturamento bruto por país.
+## 🎯 Objetivo
+
+Construir um relatório capaz de apresentar informações financeiras e comerciais de forma visual e intuitiva, permitindo analisar:
+
+- 💰 Vendas (Sales)
+- 📈 Lucro (Profit)
+- 📦 Unidades vendidas (Units Sold)
+- 🌎 Distribuição geográfica dos resultados
+- 🏢 Desempenho por segmento
+- 📊 Desempenho de vendas por produto
+
+O projeto busca transformar dados brutos em informações que possam apoiar uma análise mais rápida do desempenho comercial e financeiro.
 
 ---
 
-### 📄 Página 3: Análise Territorial e Lucratividade (Desafio Prático)
-Página construída autonomamente para avaliação de distribuição geográfica e participação de lucros.
+## 🛠️ Tecnologias e Ferramentas
 
-* 🗺️ **Vendas e Unidades Vendidas por País (Visual de Mapa 1):**
-  * **Título:** *Vendas e Unidades Vendidas por País*
-  * **Métricas:** Localização por `Country`, tamanho pela Soma de `Sales` e detalhamento de `Units Sold` via Dica de Ferramenta (Tooltip).
-* 🌎 **Lucro por País (Visual de Mapa 2):**
-  * **Título:** *Lucro por País*
-  * **Métricas:** Mapeamento do lucro líquido (`Profit`) por país para rápida comparação espacial com o mapa de vendas.
-* 🍕 **Lucro por Segmento (Visual de Pizza):**
-  * **Título:** *Lucro por Segmento*
-  * **Destaques da Análise:**
-    * **Government:** Liderança absoluta de lucro com **R$ 11,39 Mi (65,04%)**.
-    * **Small Business:** Segundo maior canal com **R$ 4,14 Mi (23,66%)**.
-    * **Channel Partners, Midmarket e Enterprise:** Representam os 11,3% restantes.
+- **Microsoft Power BI**
+- **DAX**
+- **Power BI Service**
+- **Microsoft PowerPoint**
+- **Git**
+- **GitHub**
+- **Data Visualization**
+- **Business Intelligence**
 
 ---
 
-## 🛠️ Boas Práticas e Ajustes Realizados
+# 📊 Estrutura do Dashboard
 
-* **Nomenclatura Direta e Contextual:** Ajuste de títulos para garantir clareza visual (*"Vendas e Unidades Vendidas por País"*, *"Lucro por País"*, *"Lucro por Segmento"*).
-* **Dicas de Ferramenta (Tooltips) Otimizadas:** Inclusão de `Units Sold` como dica de ferramenta nos mapas, enriquecendo o contexto sem poluir a interface.
-* **Layout Responsivo e Limpo:** Organização em grade equilibrada, facilitando a leitura de topo para base.
-* **Acessibilidade:** Aplicação de contraste e legenda explicativa com percentuais e valores absolutos visíveis.
+O relatório é composto por três páginas principais.
 
 ---
 
-## 📁 Arquivos do Repositório
+## 1️⃣ Página 1 — Relatório de Vendas por Produtos
 
-| Arquivo / Pasta | Descrição |
-| :--- | :--- |
-| 📊 `Financial_Report_DIO.pbix` | Arquivo do projeto para abertura no Power BI Desktop |
-| 📑 `Financial_Report_DIO.pptx` | Apresentação exportada / Suplemento do PowerPoint |
-| 🖼️ `screenshots/` | Capturas de tela demonstrativas das 3 páginas do relatório |
+Nesta página são apresentados visuais relacionados ao desempenho de vendas dos produtos.
+
+### Principais análises:
+
+- Vendas por produto
+- Vendas por produto e segmento
+- Evolução das vendas
+- Distribuição das vendas entre produtos
+- Quantidade de vendas por produto
+- Análise utilizando hierarquia de Ano, Trimestre, Mês e Dia
+
+### Visuais utilizados:
+
+- Gráfico de pizza
+- Gráfico de área
+- Gráfico de colunas
+- Hierarquia temporal
 
 ---
 
-## 🔗 Referências
+## 2️⃣ Página 2 — Análise Financeira
 
-* **Repositório Base:** Fork do repositório original de [Juliana Zanelatto](https://github.com/julianazanelatto/power_bi_analyst).
-* **Dataset:** *Financial Sample* da Microsoft.
+A segunda página apresenta uma visão geral dos principais indicadores financeiros e comerciais.
+
+### Principais indicadores:
+
+- Total de Sales
+- Units Sold
+- Distribuição por país
+- Evolução do Profit
+- Vendas por país
+
+Essa página permite uma visão mais ampla do desempenho financeiro e da distribuição dos resultados entre os diferentes mercados.
 
 ---
 
-💡 *Projeto desenvolvido como parte do bootcamp de Power BI Analyst na DIO.*
+## 3️⃣ Página 3 — Análise Geográfica e Lucratividade
+
+A terceira página foi desenvolvida para atender ao desafio proposto no módulo de mapas do Bootcamp.
+
+### 🌎 Visual 1 — Vendas e Unidades Vendidas por País
+
+Apresenta a distribuição geográfica das vendas e das unidades vendidas.
+
+**Principais campos utilizados:**
+
+- Country
+- Sales
+- Units Sold
+
+---
+
+### 💰 Visual 2 — Lucro por País
+
+Apresenta a distribuição geográfica do lucro entre os países analisados.
+
+**Principais campos utilizados:**
+
+- Country
+- Profit
+
+Informações complementares podem ser disponibilizadas por meio de **Tooltips**, permitindo consultar outras métricas sem comprometer a visualização principal.
+
+---
+
+### 🍕 Visual 3 — Lucro por Segmento
+
+O gráfico de pizza apresenta a participação de cada segmento no lucro total.
+
+Os segmentos analisados são:
+
+- Government
+- Small Business
+- Channel Partners
+- Midmarket
+- Enterprise
+
+---
+
+# 🔎 Principais Insights
+
+A análise dos dados permite identificar alguns pontos relevantes.
+
+### 💡 01 — Concentração de lucro
+
+O segmento **Government** apresenta a maior participação no lucro total, representando aproximadamente **65%** do resultado apresentado no gráfico de lucro por segmento.
+
+Esse resultado demonstra uma concentração significativa da lucratividade nesse segmento.
+
+---
+
+### 💡 02 — Desempenho geográfico
+
+Os mapas permitem comparar visualmente o desempenho dos diferentes países em relação a:
+
+- Sales
+- Profit
+- Units Sold
+
+Essa visualização facilita a identificação dos mercados que apresentam maior contribuição para os resultados.
+
+---
+
+### 💡 03 — Volume x resultado
+
+A comparação entre **Sales, Units Sold e Profit** permite analisar não apenas o volume de vendas, mas também o impacto dessas vendas na geração de lucro.
+
+Essa abordagem ajuda a diferenciar mercados com alto volume de vendas daqueles que apresentam maior contribuição financeira.
+
+---
+
+# 🎨 Visualização e Organização
+
+Durante a construção do relatório foram considerados alguns princípios de visualização de dados:
+
+- Organização dos visuais por contexto
+- Títulos claros e objetivos
+- Distribuição equilibrada dos gráficos
+- Utilização de mapas para análise geográfica
+- Utilização de gráfico de pizza para participação por segmento
+- Uso de Tooltips para informações complementares
+- Hierarquia visual para facilitar a interpretação dos dados
+
+O objetivo foi manter o relatório simples, organizado e de fácil compreensão.
+
+---
+
+# 📐 Conceitos Praticados
+
+Este projeto permitiu praticar conceitos importantes de Power BI, incluindo:
+
+- Importação e utilização de datasets
+- Criação de relatórios
+- Criação e configuração de visuais
+- Mapas no Power BI
+- Gráficos de pizza
+- Gráficos de colunas
+- Gráficos de área
+- Hierarquia de datas
+- Segmentação e análise de dados
+- Tooltips
+- Formatação de relatórios
+- Publicação no Power BI Service
+- Integração com PowerPoint
+- Versionamento utilizando Git e GitHub
+
+---
+
+# 📁 Estrutura do Repositório
+
+```text
+-power-bi-analyst-lucas/
+│
+├── 📁 dashboard/
+│   └── Financial_Report_DIO.pbix
+│
+├── 📁 presentation/
+│   └── Analista-Power-BI-Desafio.pptx
+│
+├── 📁 screenshots/
+│   ├── pagina-1.png
+│   ├── pagina-2.png
+│   └── pagina-3.png
+│
+├── 📁 dataset/
+│   └── Financial Sample.xlsx
+│
+└── README.md
